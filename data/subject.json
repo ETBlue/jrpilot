@@ -1,0 +1,460 @@
+{
+  "name": "司法體系",
+  "name_en": "judicial system",
+  "description": "",
+  "group": [
+    {
+      "name": "日常生活",
+      "name_en": "",
+      "description": "",
+      "activity" : [ {
+        "id": "id",
+        "description" : "",
+        "name" : "預防措施",
+        "name_en" : "prevention"
+      }, {
+        "id": "id",
+        "description" : "",
+        "name" : "保護措施",
+        "name_en" : "protection"
+      } ],
+      "stakeholder" : [ {
+        "name": "體制內使用者",
+        "name_en" : "internal users",
+        "role": [ {
+          "id": "id",
+          "description" : "",
+          "name" : "警員",
+          "name_en" : "police officer",
+          "need": ""
+        } ]
+      }, {
+        "name": "體制外使用者",
+        "name_en" : "external users",
+        "role": [ {
+          "id": "id",
+          "description" : "",
+          "name" : "市民",
+          "name_en" : "citizen",
+          "need": ""
+        } ]
+      } ]
+    }, {
+      "name": "可能的犯罪行為",
+      "name_en": "possible crime and antisocial behavior",
+      "description": "",
+      "activity" : [ ],
+      "stakeholder" : [ {
+        "name": "體制內使用者",
+        "name_en" : "internal users",
+        "role": [ ]
+      }, {
+        "name": "體制外使用者",
+        "name_en" : "external users",
+        "role": [ {
+          "id": "id",
+          "description" : "",
+          "name" : "受害人",
+          "name_en" : "victim",
+          "need": ""
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "證人",
+          "name_en" : "witness",
+          "need": ""
+        } ]
+      } ]
+    }, {
+      "name": "初步勘查",
+      "name_en": "",
+      "description": "",
+      "activity" : [ {
+        "id": "id",
+        "description" : "",
+        "name" : "通報",
+        "name_en" : "reporting"
+      }, {
+        "id": "id",
+        "description" : "",
+        "name" : "紀錄",
+        "name_en" : "recording"
+      }, {
+        "id": "id",
+        "description" : "",
+        "name" : "蒐證",
+        "name_en" : "uncovering"
+      }, {
+        "id": "id",
+        "description" : "",
+        "name" : "回覆",
+        "name_en" : "response"
+      } ],
+      "stakeholder" : [ {
+        "name": "體制內使用者",
+        "name_en" : "internal users",
+        "role": [ {
+        "id": "id",
+          "description" : "",
+          "name" : "探員",
+          "name_en" : "agency officer",
+          "need": ""
+        } ]
+      }, {
+        "name": "體制外使用者",
+        "name_en" : "external users",
+        "role": [ {
+        "id": "id",
+          "description" : "",
+          "name" : "親友",
+          "name_en" : "family or friend",
+          "need": ""
+        } ]
+      } ]
+    }, {
+      "name": "個人扶助",
+      "name_en": "personal support",
+      "description": "",
+      "activity" : [ ],
+      "stakeholder" : [ {
+        "name": "體制內使用者",
+        "name_en" : "internal users",
+        "role": [ {
+        "id": "id",
+          "description" : "",
+          "name" : "扶助工作者",
+          "name_en" : "support worker",
+          "need": ""
+        } ]
+      }, {
+        "name": "體制外使用者",
+        "name_en" : "external users",
+        "role": [ ]
+      } ]
+    }, {
+      "name": "司法程序一",
+      "name_en": "",
+      "description": "",
+      "activity" : [
+        {
+          "id": "id",
+          "description" : "",
+          "name" : "調查",
+          "name_en" : "investigation"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "逮捕",
+          "name_en" : "arrest"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "控告",
+          "name_en" : "charge"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "傳喚",
+          "name_en" : "summon"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "罰款",
+          "name_en" : "penalty"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "警告",
+          "name_en" : "caution"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "和解",
+          "name_en" : "community resolution"
+        }
+      ],
+      "stakeholder" : [
+        {
+          "name": "體制內使用者",
+          "name_en" : "internal users",
+          "role": [ {
+          "id": "id",
+            "description" : "",
+            "name" : "檢察官",
+            "name_en" : "prosecutor",
+            "need": ""
+          } ]
+        }, {
+          "name": "體制外使用者",
+          "name_en" : "external users",
+          "role": [
+            {
+              "id": "id",
+              "description" : "",
+              "name" : "犯罪嫌疑人",
+              "name_en" : "suspect",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "法律代理人",
+              "name_en" : "legal representative",
+              "need": ""
+            }
+          ]
+        }
+      ]
+    }, {
+      "name": "司法程序二之一",
+      "name_en": "",
+      "description": "",
+      "activity" : [
+        {
+          "id": "id",
+          "description" : "",
+          "name" : "起訴書",
+          "name_en" : "indictment or written charge"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "起訴",
+          "name_en" : "prosecution"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "答辯",
+          "name_en" : "defence"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "認罪",
+          "name_en" : "plea"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "財務扶助",
+          "name_en" : "financial support"
+        }
+      ],
+      "stakeholder" : [
+        {
+          "name": "體制內使用者",
+          "name_en" : "internal users",
+          "role": [ ]
+        }, {
+          "name": "體制外使用者",
+          "name_en" : "external users",
+          "role": [ ]
+        }
+      ]
+    }, {
+      "name": "司法程序二之二",
+      "name_en": "",
+      "description": "",
+      "activity" : [
+        {
+          "id": "id",
+          "description" : "",
+          "name" : "居留",
+          "name_en" : "custody"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "保釋",
+          "name_en" : "bail"
+        }
+      ],
+      "stakeholder" : [
+        {
+          "name": "體制內使用者",
+          "name_en" : "internal users",
+          "role": [ ]
+        }, {
+          "name": "體制外使用者",
+          "name_en" : "external users",
+          "role": [ ]
+        }
+      ]
+    }, {
+      "name": "司法程序三",
+      "name_en": "",
+      "description": "",
+      "activity" : [
+        {
+          "id": "id",
+          "description" : "",
+          "name" : "預審",
+          "name_en" : "trail"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "聽審",
+          "name_en" : "hearing"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "宣判",
+          "name_en" : "verdict"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "量刑",
+          "name_en" : "sentencing"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "上訴",
+          "name_en" : "appeal"
+        }
+      ],
+      "stakeholder" : [
+        {
+          "name": "體制內使用者",
+          "name_en" : "internal users",
+          "role": [
+            {
+              "id": "id",
+              "description" : "",
+              "name" : "法官一",
+              "name_en" : "magistrate",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "法律顧問",
+              "name_en" : "legal advisor",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "法官二",
+              "name_en" : "judge",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "陪審員",
+              "name_en" : "juror",
+              "need": ""
+            }
+          ]
+        }, {
+          "name": "體制外使用者",
+          "name_en" : "external users",
+          "role": [
+            {
+              "id": "id",
+              "description" : "",
+              "name" : "專業證人",
+              "name_en" : "expert witness",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "辯護人",
+              "name_en" : "defendant",
+              "need": ""
+            }
+          ]
+        }
+      ]
+    }, {
+      "name": "司法程序四",
+      "name_en": "",
+      "description": "",
+      "activity" : [
+        {
+          "id": "id",
+          "description" : "",
+          "name" : "勞動服務",
+          "name_en" : "unpaid work"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "入獄",
+          "name_en" : "prison"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "矯正",
+          "name_en" : "rehabilitation"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "保護管束",
+          "name_en" : "supervision"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "返還不當得利",
+          "name_en" : "recovery"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "賠償損害",
+          "name_en" : "compensation"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "教育與治療",
+          "name_en" : "education and treatment"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "行為限制",
+          "name_en" : "restriciton"
+        }, {
+          "id": "id",
+          "description" : "",
+          "name" : "罰鍰",
+          "name_en" : "fine"
+        }
+      ],
+      "stakeholder" : [
+        {
+          "name": "體制內使用者",
+          "name_en" : "internal users",
+          "role": [
+            {
+              "id": "id",
+              "description" : "",
+              "name" : "獄官",
+              "name_en" : "prison officer",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "緩刑官",
+              "name_en" : "probation officer",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "輔導官",
+              "name_en" : "youth worker",
+              "need": ""
+            }
+          ]
+        }, {
+          "name": "體制外使用者",
+          "name_en" : "external users",
+          "role": [
+            {
+              "id": "id",
+              "description" : "",
+              "name" : "受刑人",
+              "name_en" : "offender",
+              "need": ""
+            }, {
+              "id": "id",
+              "description" : "",
+              "name" : "更生人",
+              "name_en" : "ex-offender",
+              "need": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
