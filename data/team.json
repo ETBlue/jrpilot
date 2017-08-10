@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "第一組",
+    "description": "",
+    "url": "https://justice.president.gov.tw/meetinggroup/1"
+  },
+  {
+    "id": 2,
+    "name": "第二組",
+    "description": "",
+    "url": "https://justice.president.gov.tw/meetinggroup/2"
+  },
+  {
+    "id": 3,
+    "name": "第三組",
+    "description": "",
+    "url": "https://justice.president.gov.tw/meetinggroup/3"
+  },
+  {
+    "id": 4,
+    "name": "第四組",
+    "description": "",
+    "url": "https://justice.president.gov.tw/meetinggroup/4"
+  },
+  {
+    "id": 5,
+    "name": "第五組",
+    "description": "",
+    "url": "https://justice.president.gov.tw/meetinggroup/5"
+  }
+]
