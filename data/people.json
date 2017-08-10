@@ -4,606 +4,606 @@
     "role": ["召集人", "律師", "籌備委員"],
     "gender": "男",
     "description": "財團法人法律扶助基金會董事長",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "王婉諭",
     "role": ["籌備委員"],
     "gender": "女",
     "description": "全職媽媽",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "李振輝",
     "role": ["籌備委員"],
     "gender": "男",
     "description": "中華民國聽障人協會顧問",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "王薇君",
     "role": ["非法律人"],
     "gender": "女",
     "description": "中華民國兒童權益促進協會理事長",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "李俊億",
     "role": ["非法律人"],
     "gender": "男",
     "description": "國立臺灣大學醫學院法醫學科暨研究所教授",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "林照真",
     "role": ["非法律人"],
     "gender": "女",
     "description": "國立臺灣大學新聞研究所教授",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "陳龍綺",
     "role": ["非法律人"],
     "gender": "男",
     "description": "冤案平反者",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "Yapasuyongu'e Akuyana（陳旻園）",
     "role": ["非法律人"],
     "gender": "男",
     "description": "台灣原住民族政策協會執行長",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "阮文雄",
     "role": ["非法律人"],
     "gender": "男",
     "description": "財團法人台灣省天主教會新竹教區越南外勞配偶辦公室主任",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "黃嵩立",
     "role": ["非法律人"],
     "gender": "男",
     "description": "國立陽明大學公共衛生研究所專任教授",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "趙儀珊",
     "role": ["非法律人"],
     "gender": "女",
     "description": "國立臺灣大學心理學系助理教授",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "謝世民",
     "role": ["非法律人"],
     "gender": "男",
     "description": "國立中正大學哲學系專任教授",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "毛松廷",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "台灣桃園地方法院法官",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "蔡烱燉",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "司法院副院長",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "林志峯",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "臺灣高等法院臺南分院檢察署檢察官",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "姚崇略",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "臺灣高雄地方法院檢署檢察官",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "施秉慧",
     "role": ["法律人", "律師"],
     "gender": "女",
     "description": "中華民國律師公會全國聯合會秘書長",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "黃致豪",
     "role": ["法律人", "律師"],
     "gender": "男",
     "description": "致策國際法律事務所律師",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "張文貞",
     "role": ["法律人", "學者"],
     "gender": "女",
     "description": "國立臺灣大學法律學院教授",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "林裕順",
     "role": ["法律人", "學者"],
     "gender": "男",
     "description": "中央警察大學刑事系教授",
-    "team": "第一組"
+    "_team": "1"
   }, {
     "name": "林子儀",
     "role": ["召集人", "學者", "籌備委員"],
     "gender": "男",
     "description": "中央研究院法律所所長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "何飛鵬",
     "role": ["籌備委員"],
     "gender": "男",
     "description": "城邦媒體集團首席執行長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "許宗力",
     "role": ["籌備委員", "法官", "籌備委員"],
     "gender": "男",
     "description": "司法院院長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "劉連煜",
     "role": ["籌備委員"],
     "gender": "男",
     "description": "臺灣期貨交易所董事長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "王金壽",
     "role": ["非法律人"],
     "gender": "男",
     "description": "國立成功大學政治系暨政治經濟學研究所教授",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "王文玲",
     "role": ["非法律人"],
     "gender": "女",
     "description": "國際透明組織台灣總會監事",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "石賜亮",
     "role": ["非法律人"],
     "gender": "男",
     "description": "社團法人中華民國企業經理協進會常務理事",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "吳重禮",
     "role": ["非法律人"],
     "gender": "男",
     "description": "中央研究院政治學研究所研究員",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "范立達",
     "role": ["非法律人"],
     "gender": "男",
     "description": "文字工作者",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "陳俊宏",
     "role": ["非法律人"],
     "gender": "男",
     "description": "東吳大學政治學系副教授",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "孫友聯",
     "role": ["非法律人"],
     "gender": "男",
     "description": "台灣勞工陣線秘書長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "黃怡碧",
     "role": ["非法律人"],
     "gender": "女",
     "description": "人權公約施行監督聯盟執行長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "鄭麗珍",
     "role": ["非法律人"],
     "gender": "女",
     "description": "國立台灣大學社會工作學系專任教授",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "鄭玉山",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "最高法院院長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "張升星",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "臺中高等行政法院法官",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "吳巡龍",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "臺灣澎湖地方法院檢署檢察官",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "蔡碧玉",
     "role": ["法律人", "檢察官"],
     "gender": "女",
     "description": "法務部司法官學院院長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "林志忠",
     "role": ["法律人", "律師"],
     "gender": "男",
     "description": "旭成國際法律事務所所長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "張菊芳",
     "role": ["法律人", "律師"],
     "gender": "女",
     "description": "台北律師公會理事長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "林明昕",
     "role": ["法律人", "學者"],
     "gender": "男",
     "description": "國立臺灣大學法律學院教授",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "李建良",
     "role": ["法律人", "學者"],
     "gender": "男",
     "description": "中央研究院法律學研究所研究員兼副所長",
-    "team": "第二組"
+    "_team": "2"
   }, {
     "name": "瞿海源",
     "role": ["召集人", "籌備委員"],
     "gender": "男",
     "description": "中央研究院社會學研究所兼任研究員",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "邱太三",
     "role": ["籌備委員", "檢察官", "籌備委員"],
     "gender": "男",
     "description": "法務部部長",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "楊雲驊",
     "role": ["籌備委員", "學者", "籌備委員"],
     "gender": "男",
     "description": "國立政治大學法律系教授",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "張娟芬",
     "role": ["非法律人"],
     "gender": "女",
     "description": "作家",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "蔡博方",
     "role": ["非法律人"],
     "gender": "男",
     "description": "臺北醫學大學醫學人文研究所助理教授",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "湯京平",
     "role": ["非法律人"],
     "gender": "男",
     "description": "國立政治大學政治學系教授",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "楊永年",
     "role": ["非法律人"],
     "gender": "男",
     "description": "國立成功大學政治系暨政治經濟學研究所教授",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "孫一信",
     "role": ["非法律人"],
     "gender": "男",
     "description": "社團法人台灣社會福利總盟秘書長",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "馮賢賢",
     "role": ["非法律人"],
     "gender": "女",
     "description": "新台灣和平基金會執行長",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "劉恆維",
     "role": ["非法律人"],
     "gender": "男",
     "description": "雙和醫院神經外科醫師",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "薛明玲",
     "role": ["非法律人"],
     "gender": "男",
     "description": "社團法人中華民國財金智慧教育推廣協會理事長",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "廖英藏",
     "role": ["非法律人"],
     "gender": "男",
     "description": "財團法人犯罪被害人保護協會常務董事",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "賴恭利",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "臺灣臺中地方法院法官",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "林孟皇",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "臺灣高等法院法官",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "林達",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "臺灣臺北地方法院檢署檢察官",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "陳瑞仁",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "法務部參事",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "尤伯祥",
     "role": ["法律人", "律師"],
     "gender": "男",
     "description": "台北律師公會常務理事",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "陳重言",
     "role": ["法律人", "律師"],
     "gender": "男",
     "description": "華亞協和法律事務所律師",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "李佳玟",
     "role": ["法律人", "學者"],
     "gender": "女",
     "description": "國立成功大學法律學系教授",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "林鈺雄",
     "role": ["法律人", "學者"],
     "gender": "男",
     "description": "國立臺灣大學法律學院教授",
-    "team": "第三組"
+    "_team": "3"
   }, {
     "name": "許玉秀",
     "role": ["召集人", "學者", "籌備委員"],
     "gender": "女",
     "description": "前大法官",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "高茹萍",
     "role": ["籌備委員"],
     "gender": "女",
     "description": "台灣再生能源推動聯盟理事長",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "李念祖",
     "role": ["籌備委員", "律師", "籌備委員"],
     "gender": "男",
     "description": "理律法律事務所合夥律師",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "江元慶",
     "role": ["非法律人"],
     "gender": "男",
     "description": "『台灣冤案實錄』專欄作家",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "何錚錚",
     "role": ["非法律人"],
     "gender": "女",
     "description": "財團法人器官移植捐贈登錄中心董事",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "林常青",
     "role": ["非法律人"],
     "gender": "男",
     "description": "國立成功大學經濟學系副教授",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "陳瑤華",
     "role": ["非法律人"],
     "gender": "女",
     "description": "東吳大學哲學系教授",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "陳淑蘭",
     "role": ["非法律人"],
     "gender": "女",
     "description": "財團法人陽光社會福利基金會事業營運中心總經理",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "張維志",
     "role": ["非法律人"],
     "gender": "男",
     "description": "Opendata.tw 計畫負責人",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "路平",
     "role": ["非法律人"],
     "gender": "女",
     "description": "作家",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "賴月蜜",
     "role": ["非法律人"],
     "gender": "女",
     "description": "慈濟大學社會工作學系副教授",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "謝明珠",
     "role": ["非法律人"],
     "gender": "女",
     "description": "東京語文學院副校長",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "陳憲裕",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "臺灣高等法院法官",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "陳欽賢",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "臺灣臺南地方法院法官",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "蔡元仕",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "臺灣宜蘭地方法院檢察署主任檢察官",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "江惠民",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "臺灣高等法院臺中分院檢察署檢察長",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "吳光陸",
     "role": ["法律人", "律師"],
     "gender": "男",
     "description": "精誠法律事務所主持律師",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "張靜",
     "role": ["法律人", "律師"],
     "gender": "男",
     "description": "台灣陪審團協會理事長",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "顏厥安",
     "role": ["法律人", "學者"],
     "gender": "男",
     "description": "國立臺灣大學法律學院教授",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "林超駿",
     "role": ["法律人", "學者"],
     "gender": "男",
     "description": "台北大學法律學院教授兼院長",
-    "team": "第四組"
+    "_team": "4"
   }, {
     "name": "梁永煌",
     "role": ["召集人", "籌備委員"],
     "gender": "男",
     "description": "今周刊社長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "黃秀端",
     "role": ["籌備委員"],
     "gender": "女",
     "description": "東吳大學政治系教授兼人文社會學院院長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "蔡秀涓",
     "role": ["籌備委員"],
     "gender": "女",
     "description": "國際透明組織台灣總會常務監事",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "王以凡",
     "role": ["非法律人"],
     "gender": "女",
     "description": "臺灣基隆地方法院調查保護室主任調查保護官",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "林文蔚",
     "role": ["非法律人"],
     "gender": "男",
     "description": "法務部矯正署宜蘭監獄戒護科管理員",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "邱欽庭",
     "role": ["非法律人"],
     "gender": "男",
     "description": "財團法人證券投資人及期貨交易人保護中心董事長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "周愫嫻",
     "role": ["非法律人"],
     "gender": "女",
     "description": "國立臺北大學犯罪學研究所教授兼所長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "紀惠容",
     "role": ["非法律人"],
     "gender": "女",
     "description": "財團法人勵馨社會福利事業基金會執行長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "許主峯",
     "role": ["非法律人"],
     "gender": "男",
     "description": "新北市愛鄉協會常務理事",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "章光明",
     "role": ["非法律人"],
     "gender": "男",
     "description": "中央警察大學行政警察系暨警察政策研究所教授",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "劉北元",
     "role": ["非法律人"],
     "gender": "男",
     "description": "作家、更生團契志工",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "劉淑瓊",
     "role": ["非法律人"],
     "gender": "女",
     "description": "財團法人台灣醫療改革基金會董事長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "李明鴻",
     "role": ["法律人", "法官"],
     "gender": "男",
     "description": "臺灣高雄少年及家事法院法官",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "許仕楓",
     "role": ["法律人", "法官"],
     "gender": "女",
     "description": "臺灣高等法院法官",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "余麗貞",
     "role": ["法律人", "檢察官"],
     "gender": "女",
     "description": "法務部檢察司副司長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "陳宏達",
     "role": ["法律人", "檢察官"],
     "gender": "男",
     "description": "臺灣基隆地方法院檢署檢察長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "黃旭田",
     "role": ["法律人", "律師"],
     "gender": "男",
     "description": "財團法人民間公民與法治教育基金會董事",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "賴芳玉",
     "role": ["法律人", "律師"],
     "gender": "女",
     "description": "律州聯合法律事務所家事部門主持律師",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "林志潔",
     "role": ["法律人", "學者"],
     "gender": "女",
     "description": "國立交通大學科技法律學院教授兼副院長",
-    "team": "第五組"
+    "_team": "5"
   }, {
     "name": "盧映潔",
     "role": ["法律人", "學者"],
     "gender": "女",
     "description": "國立中正大學法律學系教授",
-    "team": "第五組"
+    "_team": "5"
   }
 ]
