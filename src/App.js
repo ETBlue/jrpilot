@@ -139,7 +139,7 @@ class App extends Component {
 
       if ( (this.state.statusfilter !== 'all' && this.state.statusfilter !== statusID) || ( this.state.teamfilter !== 'all' && this.state.teamfilter !== teamID ) ) {
 
-        if (this.state.teamfilter === teamID) {
+        if (this.state.teamfilter === teamID || this.state.teamfilter === 'all') {
           statusCount[statusID].count += 1
           statusCount.all.count += 1
         }
