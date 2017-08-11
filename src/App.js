@@ -42,7 +42,6 @@ class App extends Component {
         teamfilter: teamfilter || prevState.teamfilter ,
         statusfilter: statusfilter || prevState.statusfilter
       }
-      console.log(prevState)
       return prevState
     })
 
@@ -66,6 +65,12 @@ class App extends Component {
 
     agenda.forEach((item, index) => {
       agendaObject[item.id] = item
+    })
+
+    let meetingObject = {}
+
+    meeting.forEach((item, index) => {
+      meetingObject[item.id] = item
     })
 
     let menuCount = {
@@ -125,9 +130,10 @@ class App extends Component {
         menuCount.all += 1
 
         teamJSX = (
-          <span className='ui horizontal label' style={{textAlign: 'left'}}>
+          <a className='ui horizontal teal label' style={{textAlign: 'left'}} href={teamObject[teamID].url} target='_blank'>
+            <i className='icon linkify' />
             { teamObject[teamID].name }
-          </span>
+          </a>
         )
       } 
 
@@ -158,7 +164,7 @@ class App extends Component {
         voting: item.voting === 'passed' ? '已通過' : ( item.voting === 'failed' ? '已否決' : '狀態不明' )
       }
 
-      const metaJSX = item._topic.split('、').map((t, i) => {
+      const topicJSX = item._topic.split('、').map((t, i) => {
         if (t.length > 0 && topicObject[t]) {
           return (
             <span className='ui horizontal label' key={i} style={{textAlign: 'left'}}>
@@ -180,10 +186,11 @@ class App extends Component {
                     { agendaObject[a].name }
                   </p>
                   <p>
-                    <span className='ui tiny horizontal basic label'>
+                    <a className='ui horizontal teal label' href={ meetingObject[agendaObject[a]._meeting].url } target='_blank'>
+                      <i className='icon linkify' />
                       會議 { agendaObject[a]._meeting }
-                    </span>
-                    <span className='ui tiny horizontal basic label'>
+                    </a>
+                    <span className='ui horizontal label'>
                       討論 { a }
                     </span>
                   </p>
@@ -261,7 +268,7 @@ class App extends Component {
             <div className='ui relaxed divided list'>
               <div className='item'>
               { teamJSX }
-              { metaJSX }
+              { topicJSX }
               </div>
             </div>
             <h3 className='ui small header'>
