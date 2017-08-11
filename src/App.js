@@ -126,12 +126,12 @@ class App extends Component {
 
       return (
         <div className='ui segments' key={ index }>
-          <div className={`ui ${status} inverted secondary segment`}>
+          <div className={`ui ${status} segment`}>
             <h2 className='ui medium header'>
               { item.content_proposal }
             </h2>
           </div>
-          <div className={`ui left aligned ${status} segment`} style={{backgroundColor: 'rgba(0,0,0,0.05)'}}>
+          <div className={`ui left aligned segment`} style={{backgroundColor: 'rgba(0,0,0,0.05)'}}>
             <div className='ui fluid steps'>
               <div className={`step ${classNames.proposal}`}>
                 <i className='icon text file outline' />
