@@ -24,7 +24,27 @@ class App extends Component {
     super(props)
 
     this.state = {
+      teamfilter: 'all',
+      statusfilter: 'all'
     }
+
+    this._filter = this._filter.bind(this)
+
+  }
+
+  _filter(event) {
+
+    const teamfilter = event.target.getAttribute('data-teamfilter')
+    const statusfilter = event.target.getAttribute('data-statusfilter')
+
+    this.setState((prevState, props) => {
+      prevState = {
+        teamfilter: teamfilter || prevState.teamfilter ,
+        statusfilter: statusfilter || prevState.statusfilter
+      }
+      console.log(prevState)
+      return prevState
+    })
 
   }
 
@@ -48,15 +68,81 @@ class App extends Component {
       agendaObject[item.id] = item
     })
 
-    const menuJSX = team.map((item, index) => {
-      return (
-        <div className="item" key={index}>
-          { item.name }
-        </div>
-      )
-    })
+    let menuCount = {
+      'all': 0,
+      '1': 0,
+      '2': 0,
+      '3': 0,
+      '4': 0,
+      '5': 0
+    }
+
+    let statusCount = {
+      'all': {
+        name: '所有狀態',
+        count: 0,
+        color: 'black'
+      },
+      'revoked': {
+        name: '已撤案',
+        count: 0,
+        color: 'red'
+      },
+      'others': {
+        name: '放置 play',
+        count: 0,
+        color: ''
+      },
+      'failed': {
+        name: '不通過',
+        count: 0,
+        color: 'red'
+      },
+      'passed': {
+        name: '通過',
+        count: 0,
+        color: 'green'
+      }
+    }
 
     const proposalJSX = proposal.map((item, index) => {
+
+      let teamID = item._team.toString()
+
+      let statusID
+      if (item.voting === 'passed' || item.voting === 'failed') {
+        statusID = item.voting
+      } else if (item.proposal === 'revoked') {
+        statusID = item.proposal
+      } else {
+        statusID = 'others'
+      }
+
+      let teamJSX
+      if ( teamID.length > 0 && teamObject[teamID] ) {
+
+        menuCount[teamID] += 1
+        menuCount.all += 1
+
+        teamJSX = (
+          <span className='ui horizontal label' style={{textAlign: 'left'}}>
+            { teamObject[teamID].name }
+          </span>
+        )
+      } 
+
+      if ( (this.state.statusfilter !== 'all' && this.state.statusfilter !== statusID) || ( this.state.teamfilter !== 'all' && this.state.teamfilter !== teamID ) ) {
+
+        if (this.state.teamfilter === teamID) {
+          statusCount[statusID].count += 1
+          statusCount.all.count += 1
+        }
+
+        return null
+      }
+
+      statusCount[statusID].count += 1
+      statusCount.all.count += 1
 
       const classNames = {
         proposal: item.proposal === 'passed' ? 'completed' : ( item.proposal === 'revoked' ? 'failed' : 'disabled' ) ,
@@ -81,15 +167,6 @@ class App extends Component {
           )
         }
       })
-
-      let teamJSX
-      if ( item._team.toString().length > 0 && teamObject[item._team] ) {
-        teamJSX = (
-          <span className='ui horizontal label' style={{textAlign: 'left'}}>
-            { teamObject[item._team].name }
-          </span>
-        )
-      } 
 
       let agendaJSX
       if (topicObject[item._topic]) {
@@ -117,16 +194,16 @@ class App extends Component {
         })
       }
 
-      let status
-      if (item.proposal === 'revoked' || item.voting === 'failed') {
-        status = 'red'
-      } else if (item.voting === 'passed') {
-        status = 'green'
+      let statusColor
+      if (statusID === 'revoked' || statusID === 'failed') {
+        statusColor = 'red'
+      } else if (statusID === 'passed') {
+        statusColor = 'green'
       }
 
       return (
         <div className='ui segments' key={ index }>
-          <div className={`ui ${status} segment`}>
+          <div className={`ui ${statusColor} segment`}>
             <h2 className='ui medium header'>
               { item.content_proposal }
             </h2>
@@ -198,6 +275,31 @@ class App extends Component {
       )
     })
 
+    const menuJSX = team.map((item, index) => {
+
+      const itemID = item.id.toString()
+
+      return (
+        <div className={`item ${this.state.teamfilter === itemID ? 'active' : ''}`} key={index} data-teamfilter={ itemID } style={{cursor: 'pointer'}} onClick={this._filter}>
+          { item.name }
+          <span className='ui horizontal label' data-teamfilter={ itemID }>
+            { menuCount[itemID] }
+          </span>
+        </div>
+      )
+    })
+
+    const submenuJSX = Object.keys(statusCount).map((key) => {
+      return (
+        <div className={`item ${this.state.statusfilter === key ? 'active' : ''}`} key={key} data-statusfilter={ key } style={{cursor: 'pointer'}} onClick={this._filter}>
+          { statusCount[key].name }
+          <span className={`ui horizontal ${statusCount[key].color} label`} data-statusfilter={ key }>
+            { statusCount[key].count }
+          </span>
+        </div>
+      )
+    })
+
     return (
       <div className='App'>
         <div className='App-header ui basic inverted segment'>
@@ -215,8 +317,17 @@ class App extends Component {
           </div>
         </div>
         <div className='ui container'>
-          <div className='ui pagination menu'>
+          <div className='ui six item secondary pointing menu'>
+            <div className={`item ${this.state.teamfilter === 'all' ? 'active' : ''}`} data-teamfilter='all' style={{cursor: 'pointer'}} onClick={this._filter}>
+              全部
+              <span className='ui horizontal black label' data-teamfilter='all'>
+                { menuCount.all }
+              </span>
+            </div>
             { menuJSX }
+          </div>
+          <div className='ui five item secondary menu'>
+            { submenuJSX }
           </div>
           { proposalJSX }
         </div>
