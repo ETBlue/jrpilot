@@ -75,7 +75,7 @@ class App extends Component {
       const metaJSX = item._topic.split('、').map((t, i) => {
         if (t.length > 0 && topicObject[t]) {
           return (
-            <span className='ui horizontal label' key={i}>
+            <span className='ui horizontal label' key={i} style={{textAlign: 'left'}}>
               議題 { t }　{ topicObject[t].name }
             </span>
           )
@@ -85,7 +85,7 @@ class App extends Component {
       let teamJSX
       if ( item._team.toString().length > 0 && teamObject[item._team] ) {
         teamJSX = (
-          <span className='ui horizontal label'>
+          <span className='ui horizontal label' style={{textAlign: 'left'}}>
             { teamObject[item._team].name }
           </span>
         )
@@ -125,13 +125,14 @@ class App extends Component {
       }
 
       return (
-        <div className='ui left aligned segment' key={ index } style={{backgroundColor: 'rgba(0,0,0,0.05)'}}>
-            <div className={`ui top attached inverted segment ${status}`}>
-              <h2 className='ui small header'>
-                { item.content_proposal }
-              </h2>
-            </div>
-            <div className='ui fluid steps' style={{marginTop: 0}}>
+        <div className='ui segments' key={ index }>
+        <div className={`ui left aligned ${status} inverted segment`}>
+            <h2 className={`ui small header`}>
+              { item.content_proposal }
+            </h2>
+        </div>
+        <div className={`ui left aligned ${status} segment`} style={{backgroundColor: 'rgba(0,0,0,0.05)'}}>
+            <div className='ui fluid steps'>
               <div className={`step ${classNames.proposal}`}>
                 <i className='icon text file outline' />
                 <div className='content'>
@@ -193,6 +194,7 @@ class App extends Component {
               { agendaJSX }
             </div>
         </div>
+        </div>
       )
     })
 
@@ -209,6 +211,7 @@ class App extends Component {
             <p className='App-intro'>
               An open data experiment trying to find out an operative way from the beginning of data input to the end of web services, taking Taiwan's National Affairs Conference on Judicial Reform (2017) as example.
             </p>
+            <hr className='ui hidden divider' />
           </div>
         </div>
         <div className='ui container'>

@@ -1,7 +1,9 @@
 {
   "name": "jrpilot",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "homepage": "http://myname.github.io/jrpilot",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
