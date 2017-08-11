@@ -318,8 +318,40 @@ class App extends Component {
               提案闖天關
             </h1>
             <p className='App-intro'>
-              An open data experiment trying to find out an operative way from the beginning of data input to the end of web services, taking Taiwan's National Affairs Conference on Judicial Reform (2017) as example.
+              一個 open data 結合公民審議的小實驗，以 2017 總統府司法改革國是會議為例，從上游的資料內容產生、到下游的衍生應用開發，藉由走過整個生產鏈，探索 open data 從理論到實做的過程中可能的瓶頸。本網頁《司改國是 2017 - 提案闖天關》是下游衍生應用的範例，未來的公民審議如果有從上游做結構化資料，那麼除了類似本頁的議題履歷之外，還可以發展出更多不同類型的有趣的衍生應用。詳細的實驗心得會另外寫在部落格（還沒寫 XD）
             </p>
+            <div className='ui inverted horizontal link list'>
+              <a className='item' target='_blank' href='https://etblue.github.io/jrpilot/'>
+                <i className='icon globe' />
+                <span className='content'>
+                範例
+                </span>
+              </a>
+              <a className='item' target='_blank' href='https://github.com/ETBlue/jrpilot'>
+                <i className='icon github' />
+                <span className='content'>
+                程式碼
+                </span>
+              </a>
+              <a className='item' target='_blank' href='https://docs.google.com/spreadsheets/d/1CTGZfJ55WJQEq6UexllrXZJvceVP3TRjzNGMgxE-I68/edit?usp=sharing'>
+                <i className='icon table' />
+                <span className='content'>
+                資料
+                </span>
+              </a>
+              <a className='item' target='_blank' href='https://docs.google.com/presentation/d/18QjhH784zyxAxGue7LKMwafGSZ1tqdc1tGSa_ZBTeOU/edit?usp=sharing'>
+                <i className='icon tv' />
+                <span className='content'>
+                實驗步驟
+                </span>
+              </a>
+              <a className='item' target='_blank' href='https://www.facebook.com/ETBlue/media_set?set=a.10210724638284792.1073741872.1014354995&type=3'>
+                <i className='icon photo' />
+                <span className='content'>
+                過程紀錄
+                </span>
+              </a>
+            </div>
             <hr className='ui hidden divider' />
           </div>
         </div>
@@ -338,6 +370,7 @@ class App extends Component {
           </div>
           { proposalJSX }
         </div>
+        <hr className='ui hidden divider' />
       </div>
     );
   }
