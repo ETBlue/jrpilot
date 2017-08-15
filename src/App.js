@@ -6,14 +6,14 @@ import logo from './logo.svg';
 import './App.css';
 
 import agenda from './data/agenda.json';
-import conference from './data/conference.json';
+//import conference from './data/conference.json';
 import meeting from './data/meeting.json';
-import news from './data/news.json';
-import people from './data/people.json';
+//import news from './data/news.json';
+//import people from './data/people.json';
 import proposal from './data/proposal.json';
-import question from './data/question.json';
-import reference from './data/reference.json';
-import subject from './data/subject.json';
+//import question from './data/question.json';
+//import reference from './data/reference.json';
+//import subject from './data/subject.json';
 import team from './data/team.json';
 import topic from './data/topic.json';
 
