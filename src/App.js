@@ -26,7 +26,8 @@ class App extends Component {
     this.state = {
       teamfilter: 'all',
       statusfilter: 'all',
-      pagefilter: '1'
+      pagefilter: '1',
+      itemPerPage: 30
     }
 
     this._filter = this._filter.bind(this)
@@ -99,31 +100,26 @@ class App extends Component {
       this._staticData.statusCount[key] = {
         'all': {
           name: '所有狀態',
-          count: 0,
           color: 'black',
           proposalIDs: []
         },
         'revoked': {
           name: '已撤案',
-          count: 0,
           color: 'red',
           proposalIDs: []
         },
         'others': {
           name: '放置 play',
-          count: 0,
           color: '',
           proposalIDs: []
         },
         'failed': {
           name: '不通過',
-          count: 0,
           color: 'red',
           proposalIDs: []
         },
         'passed': {
           name: '通過',
-          count: 0,
           color: 'green',
           proposalIDs: []
         }
@@ -185,11 +181,13 @@ class App extends Component {
 
     const teamfilter = event.target.getAttribute('data-teamfilter')
     const statusfilter = event.target.getAttribute('data-statusfilter')
+    const pagefilter = event.target.getAttribute('data-pagefilter')
 
     this.setState((prevState, props) => {
       prevState = {
         teamfilter: teamfilter || prevState.teamfilter ,
-        statusfilter: statusfilter || prevState.statusfilter
+        statusfilter: statusfilter || prevState.statusfilter,
+        pagefilter: pagefilter || prevState.pagefilter
       }
       return prevState
     })
@@ -220,32 +218,50 @@ class App extends Component {
       )
     })
 
-    const menuJSX = Object.keys(menuCount).map((itemID, index) => {
+    const menuJSX = ['all', '1', '2', '3', '4', '5'].map((itemID, index) => {
       return (
-        <div className={`item ${this.state.teamfilter === itemID ? 'active' : ''}`} key={index} data-teamfilter={ itemID } style={{cursor: 'pointer'}} onClick={this._filter}>
+        <div className={`item ${this.state.teamfilter === itemID ? 'active' : ''}`} key={index} data-teamfilter={ itemID } data-pagefilter='1' style={{cursor: 'pointer'}} onClick={this._filter}>
           { teamObject[itemID] ? teamObject[itemID].name : '所有組別' }
-          <span className={`ui horizontal label ${this.state.teamfilter === itemID ? 'black' : ''}`} data-teamfilter={ itemID }>
+          <span className={`ui horizontal label ${this.state.teamfilter === itemID ? 'black' : ''}`} data-teamfilter={ itemID } data-pagefilter='1'>
             { menuCount[itemID] }
           </span>
         </div>
       )
     })
 
-    const submenuJSX = Object.keys(statusCount[this.state.teamfilter]).map((key) => {
+    const submenuJSX = ['all', 'revoked', 'others', 'failed', 'passed'].map((key) => {
       return (
-        <div className={`item ${this.state.statusfilter === key ? 'active' : ''}`} key={key} data-statusfilter={ key } style={{cursor: 'pointer'}} onClick={this._filter}>
+        <div className={`item ${this.state.statusfilter === key ? 'active' : ''}`} key={key} data-statusfilter={ key } data-pagefilter='1' style={{cursor: 'pointer'}} onClick={this._filter}>
           { statusCount[this.state.teamfilter][key].name }
-          <span className={`ui horizontal ${statusCount[this.state.teamfilter][key].color} label`} data-statusfilter={ key }>
+          <span className={`ui horizontal ${statusCount[this.state.teamfilter][key].color} label`} data-statusfilter={ key } data-pagefilter='1'>
             { statusCount[this.state.teamfilter][key].proposalIDs.length }
           </span>
         </div>
       )
     })
 
-    const proposalJSX = statusCount[this.state.teamfilter][this.state.statusfilter].proposalIDs.map((proposalID, index) => {
+    let paginationJSX = []
 
+    const currentItemCount = statusCount[this.state.teamfilter][this.state.statusfilter].proposalIDs.length
+    for (let index = 1; index <= Math.ceil(currentItemCount / parseInt(this.state.itemPerPage, 10)); index++) {
+      paginationJSX.push(
+        <div key={index} className={`item ${this.state.pagefilter === index.toString() ? 'active' : ''}`} data-pagefilter={ index } onClick={this._filter} style={{cursor: 'pointer'}}>
+          { index }
+        </div>
+      )
+    }
+
+    let proposalJSX = []
+
+    const currentPageIndex = parseInt(this.state.pagefilter, 10) * this.state.itemPerPage - this.state.itemPerPage
+    for (let index = currentPageIndex; index < currentPageIndex + this.state.itemPerPage; index++) {
+
+      if (index >= statusCount[this.state.teamfilter][this.state.statusfilter].proposalIDs.length) {
+        break
+      }
+
+      const proposalID = statusCount[this.state.teamfilter][this.state.statusfilter].proposalIDs[index]
       const item = proposalData[proposalID]
-
       const {
         teamID, 
         statusID, 
@@ -301,7 +317,7 @@ class App extends Component {
         })
       }
 
-      return (
+      proposalJSX.push(
         <div className='ui segments' key={ index }>
           <div className={`ui ${statusColor} segment`}>
             <h2 className='ui medium header'>
@@ -373,7 +389,8 @@ class App extends Component {
           </div>
         </div>
       )
-    })
+
+    }
 
     return (
       <div className='App'>
@@ -401,7 +418,13 @@ class App extends Component {
           <div className='ui five item secondary menu'>
             { submenuJSX }
           </div>
+          <div className='ui pagination menu'>
+            { paginationJSX }
+          </div>
           { proposalJSX }
+          <div className='ui pagination menu'>
+            { paginationJSX }
+          </div>
         </div>
         <hr className='ui hidden divider' />
       </div>
