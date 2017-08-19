@@ -428,7 +428,7 @@ class App extends Component {
               提案闖天關
             </h1>
             <p className='App-intro'>
-              一個 open data 結合公民審議的小實驗，以 2017 總統府司法改革國是會議為例，從上游的資料內容產生、到下游的衍生應用開發，藉由走過整個生產鏈，探索 open data 從理論到實做的過程中可能的瓶頸。本網頁《司改國是 2017 - 提案闖天關》是下游衍生應用的範例，未來的公民審議如果有從上游做結構化資料，那麼除了類似本頁的議題履歷之外，還可以發展出更多不同類型的有趣的衍生應用。詳細的實驗心得會另外寫在部落格（還沒寫 XD）
+              一個 open data 結合公民審議的小實驗，以 2017 總統府司法改革國是會議為例。
             </p>
             <div className='ui inverted horizontal link list'>
               { aboutJSX }
