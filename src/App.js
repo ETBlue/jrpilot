@@ -243,13 +243,35 @@ class App extends Component {
     let paginationJSX = []
 
     const currentItemCount = statusCount[this.state.teamfilter][this.state.statusfilter].proposalIDs.length
-    for (let index = 1; index <= Math.ceil(currentItemCount / parseInt(this.state.itemPerPage, 10)); index++) {
+    const currentPageCount = Math.ceil(currentItemCount / parseInt(this.state.itemPerPage, 10))
+    for (let index = 1; index <= currentPageCount; index++) {
       paginationJSX.push(
         <div key={index} className={`item ${this.state.pagefilter === index.toString() ? 'active' : ''}`} data-pagefilter={ index } onClick={this._filter} style={{cursor: 'pointer'}}>
           { index }
         </div>
       )
     }
+    const atFirstPage = parseInt(this.state.pagefilter, 10) - 1 < 1 ? true : false
+    const atLastPage = parseInt(this.state.pagefilter, 10) + 1 > currentPageCount ? true : false
+    let mobilePaginationJSX = (
+      <div className='ui pagination menu mobile'>
+        <div className={`item ${this.state.pagefilter === '1' ? 'active' : ''}`} data-pagefilter='1' onClick={this._filter} style={{cursor: 'pointer'}}>
+          1
+        </div>
+        <div className={`icon item ${atFirstPage ? 'disabled' : ''}`} data-pagefilter={ !atFirstPage ? parseInt(this.state.pagefilter, 10) - 1 : 1 } onClick={this._filter} style={{cursor: 'pointer'}}>
+          <i className='icon left chevron' data-pagefilter={ !atFirstPage ? parseInt(this.state.pagefilter, 10) - 1 : 1 } />
+        </div>
+        <div className='item'>
+          第 {this.state.pagefilter} 頁
+        </div>
+        <div className={`icon item ${atLastPage ? 'disabled' : ''}`} data-pagefilter={ !atLastPage ? parseInt(this.state.pagefilter, 10) + 1 : currentPageCount} onClick={this._filter} style={{cursor: 'pointer'}}>
+          <i className='icon right chevron' data-pagefilter={ !atLastPage ? parseInt(this.state.pagefilter, 10) + 1 : currentPageCount} />
+        </div>
+        <div className={`item ${this.state.pagefilter === currentPageCount.toString() ? 'active' : ''}`} data-pagefilter={currentPageCount} onClick={this._filter} style={{cursor: 'pointer'}}>
+          {currentPageCount}
+        </div>
+      </div>
+    )
 
     let proposalJSX = []
 
@@ -264,7 +286,6 @@ class App extends Component {
       const item = proposalData[proposalID]
       const {
         teamID, 
-        statusID, 
         processClassNames, 
         processDescriptions,
         statusColor
@@ -287,6 +308,8 @@ class App extends Component {
               議題 { t }　{ topicObject[t].name }
             </span>
           )
+        } else {
+          return null
         }
       })
 
@@ -313,6 +336,8 @@ class App extends Component {
                 </div>
               </div>
             )
+          } else {
+            return null
           }
         })
       }
@@ -412,19 +437,21 @@ class App extends Component {
           </div>
         </div>
         <div className='ui container'>
-          <div className='ui six item secondary pointing menu'>
+          <div className='ui six item secondary pointing stackable menu'>
             { menuJSX }
           </div>
-          <div className='ui five item secondary menu'>
+          <div className='ui five item secondary stackable menu'>
             { submenuJSX }
           </div>
-          <div className='ui pagination menu'>
+          <div className='ui pagination menu desktop'>
             { paginationJSX }
           </div>
+          { mobilePaginationJSX }
           { proposalJSX }
-          <div className='ui pagination menu'>
+          <div className='ui pagination menu desktop'>
             { paginationJSX }
           </div>
+          { mobilePaginationJSX }
         </div>
         <hr className='ui hidden divider' />
       </div>
