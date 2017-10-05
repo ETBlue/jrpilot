@@ -63,6 +63,11 @@ class App extends Component {
         url: 'https://www.facebook.com/ETBlue/media_set?set=a.10210724638284792.1073741872.1014354995&type=3',
         icon: 'photo',
         text: '過程紀錄'
+      },
+      {
+        url: 'https://etblue.blogspot.tw/2017/08/open-data-combo-deliberative-democracy.html',
+        icon: 'file text',
+        text: '心得報告'
       }
     ]
 
